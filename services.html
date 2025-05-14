@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Sharma portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+            <h3>Shubham Portfolio</h3>
+           
+            </div>
+            <div class="right">
+                <ul class="sidebar">
+                 <li onclick=hideSideBar()><i class='bx bx-x' style="font-size: 23px;padding-top: 33px;"></i></li>   
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+                </ul>
+            <ul>
+                <li class="hiddenMobile"><a href="index.html">Home</a></li>
+            <li class="hiddenMobile"><a href="about.html" >About</a></li>
+            <li class="hiddenMobile"><a href="services.html">Services</a></li>
+            <li class="hiddenMobile"><a href="project.html">Project</a></li>
+            <li class="hiddenMobile"><a href="contact.html">Contact</a></li>
+            <li class="menu-button" onclick=showSideBr()><i class='bx bx-menu' style="font-size: 23px;"></i></li>
+            </ul>
+            </div>
+        </nav>
+  
+
+   
+</header>
+
+<section  class="servicesSection">
+    <h2>Services</h2>
+    <div class="servicesContainer">
+        <div class="serviceCard">
+            <h3>Web Development</h3>
+            <p>I specialize in building modern, responsive, and fast websites. Whether it's a personal blog or a business website, I've got you covered!</p>
+        </div>
+        <div class="serviceCard">
+            <h3>E-commerce Solutions</h3>
+            <p>Creating secure and user-friendly e-commerce websites with features like shopping carts, product catalogs, and secure checkout systems.</p>
+        </div>
+        <div class="serviceCard">
+            <h3>Backend Development</h3>
+            <p>Design and build scalable and robust server-side applications using Node.js, Express.js, and MongoDB to power your business.</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footerContainer">
+        <p>© 2025 Shubham Sharma. All Rights Reserved.</p>
+        <div class="socialIcons">
+            <a href="" target="_blank" >GitHub</a>
+            <a href="" target="_blank">LinkedIn</a>
+            <a href="">Email</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    var typed = new Typed('#typed', {
+      strings: [' Developer.', ' Designer.'],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true
+    });
+
+    function showSideBr(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display ='flex'
+        }
+
+        function hideSideBar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display ='none'
+        }
+  </script>
+    
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <nav>
+                <div class="left">
+                <a href="project.html"><h3>Shubham Portfolio</h3></a>
+                </div>
+                <div class="right">
+                    <ul class="sidebar">
+                     <li onclick=hideSideBar()><i class='bx bx-x' style="font-size: 23px;padding-top: 33px;"></i></li>   
+                        <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                    </ul>
+                <ul>
+                    <li class="hiddenMobile"><a href="index.html">Home</a></li>
+                <li class="hiddenMobile"><a href="about.html" >About</a></li>
+                <li class="hiddenMobile"><a href="services.html">Services</a></li>
+                <li class="hiddenMobile"><a href="project.html">Project</a></li>
+                <li class="hiddenMobile"><a href="contact.html">Contact</a></li>
+                <li class="menu-button" onclick=showSideBr()><i class='bx bx-menu' style="font-size: 23px;"></i></li>
+                </ul>
+                </div>
+            </nav>
+      
+
+       
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <p>Hi,I am <span class="changeCol">Shubham</span> </p>
+                <div>and I am passionate</div>
+                <!-- <div>Web Developer</div> -->
+                <h4>Web <span id="typed"></span></h4>
+            </div>
+            <div class="rightSection">
+              <img src="images/person.png" alt="myImage">
+            </div>
+
+        </section>
+
+        <section class="experienceSection">
+                <h2>My Experience</h2>
+                <div class="experienceContainer">
+            
+                    <div class="experienceItem">
+                        <h3>Full Stack Web Development Training</h3>
+                        <p><strong>Institute:</strong>Techedo Technologies</p>
+                        <p><strong>Duration:</strong> 6 Months</p>
+                        <p><strong>Overview:</strong> 
+                            Successfully completed an intensive 6-month Full Stack Web Development training program. Gained strong practical knowledge of frontend and backend technologies through hands-on projects and real-world simulations.
+                        </p>
+                        <p><strong>Technologies Covered:</strong> 
+                            HTML, CSS, JavaScript, Bootstrap, React.js, Node.js, Express.js,j-query, MongoDB.
+                        </p>
+                    </div>
+            
+                    <div class="experienceItem">
+                        <h3>Key Projects</h3>
+                        <ul>
+                            <li><strong>fitness - Gym Website:</strong> Designed and developed a modern, fully responsive frontend for a gym and fitness brand.</li>
+                            <li><strong>E-Store - E-commerce Platform:</strong> Built a full-stack e-commerce application with user authentication, product management, and shopping cart functionalities.</li>
+                            <li><strong>QuickCart - Bootstrap E-commerce:</strong> Developed a clean, mobile-friendly e-commerce frontend template using Bootstrap .</li>
+                            <li><strong>Simple Calculator App:</strong> Created a fully functional calculator capable of basic arithmetic operations using HTML, CSS, and JavaScript.</li>
+                            <li><strong>Dice Roller Game:</strong>A two-player dice game built with HTML, CSS, and JavaScript. Players take turns rolling a dice, and their progress is shown in colored boxes. The first to reach 10 wins, while the other is disabled during the turn.</li>
+                        </ul>
+                    </div>
+            
+                </div>
+            </section>
+            <section id="skills" class="skillsSection">
+                <h2>My Skills</h2>
+                <div class="skillsContainer">
+                    <div class="skillItem">HTML</div>
+                    <div class="skillItem">CSS</div>
+                    <div class="skillItem">JavaScript</div>
+                    <div class="skillItem">Bootstrap </div>
+                    <div class="skillItem">React.js</div>
+                    <div class="skillItem">Node.js</div>
+                    <div class="skillItem">Express.js</div>
+                    <div class="skillItem">MongoDB</div>
+                    <div class="skillItem">My-sql</div>
+                    <div class="skillItem">Git & GitHub</div>
+                </div>
+            </section>
+            
+            
+            
+        </section>
+    </main>
+  
+    <footer class="footer">
+        <div class="footerContainer">
+            <p>© 2025 Shubham Sharma. All Rights Reserved.</p>
+            <div class="socialIcons">
+                <a href="" target="_blank" >GitHub</a>
+                <a href="" target="_blank">LinkedIn</a>
+                <a href="">Email</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        var typed = new Typed('#typed', {
+          strings: [' Developer.', ' Designer.'],
+          typeSpeed: 60,
+          backSpeed: 40,
+          loop: true
+        });
+
+
+        function showSideBr(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display ='flex'
+        }
+
+        function hideSideBar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display ='none'
+        }
+      </script>
+        
+   
+
+</body>
+</html>

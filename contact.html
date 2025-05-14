@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Sharma portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+            <h3>Shubham Portfolio</h3>
+            </div>
+            <div class="right">
+                <ul class="sidebar">
+                 <li onclick=hideSideBar()><i class='bx bx-x' style="font-size: 23px;padding-top: 33px;"></i></li>   
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+                </ul>
+            <ul>
+                <li class="hiddenMobile"><a href="index.html">Home</a></li>
+            <li class="hiddenMobile"><a href="about.html" >About</a></li>
+            <li class="hiddenMobile"><a href="services.html">Services</a></li>
+            <li class="hiddenMobile"><a href="project.html">Project</a></li>
+            <li class="hiddenMobile"><a href="contact.html">Contact</a></li>
+            <li class="menu-button" onclick=showSideBr()><i class='bx bx-menu' style="font-size: 23px;"></i></li>
+            </ul>
+            </div>
+        </nav>
+            <main>
+                <section class="contactSection">
+                    <h2>Contact Me</h2>
+                    <form action="/send-email" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required><br>
+                        <input type="email" name="email" placeholder="Your Email" required><br>
+                        <textarea name="message" placeholder="Your Message" required></textarea><br>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </section>
+            </main>
+        
+          
+
+        </header>
+        <footer class="footer" style="margin-top: 90px;">
+            <div class="footerContainer">
+                <p>© 2025 Shubham Sharma. All Rights Reserved.</p>
+                <div class="socialIcons">
+                    <a href="" target="_blank" >GitHub</a>
+                    <a href="" target="_blank">LinkedIn</a>
+                    <a href="">Email</a>
+                </div>
+            </div>
+        </footer>
+        <script>
+             function showSideBr(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display ='flex'
+        }
+
+        function hideSideBar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display ='none'
+        }
+        </script>
+            </body>
+            </html>
+            
+
+       
+    
